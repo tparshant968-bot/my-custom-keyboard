@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_light">#F5F5F7</color>
+
+    <!-- Palette Colors (Aapki Image ke 10 Colors) -->
+    <color name="palette_1">#3F51B5</color> <!-- Navy Blue -->
+    <color name="palette_2">#4CAF50</color> <!-- Green -->
+    <color name="palette_3">#B71C1C</color> <!-- Deep Red -->
+    <color name="palette_4">#455A64</color> <!-- Slate Grey -->
+    <color name="palette_5">#0288D1</color> <!-- Light Blue -->
+    <color name="palette_6">#D32F2F</color> <!-- Red -->
+    <color name="palette_7">#F57C00</color> <!-- Orange -->
+    <color name="palette_8">#8E24AA</color> <!-- Purple -->
+    <color name="palette_9">#2E7D32</color> <!-- Dark Green -->
+    <color name="palette_10">#C2185B</color> <!-- Pink -->
+</resources>

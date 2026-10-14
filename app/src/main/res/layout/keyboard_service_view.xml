@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ECEEF4">
+
+    <!-- Top Tabs Bar (Horizontal Scroll + Grid Switcher) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#FFFFFF">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/kbTabContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/btnKbGridSwitch"
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="☷"
+            android:textSize="20sp"
+            android:textColor="#424242" />
+    </LinearLayout>
+
+    <!-- Colored Buttons Grid Scroll View -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:fillViewport="true"
+        android:padding="4dp">
+
+        <GridLayout
+            android:id="@+id/kbButtonGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3" />
+    </ScrollView>
+
+    <!-- Bottom Action Bar (Delete, Switch, Space, Enter/Send) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="4dp"
+        android:background="#E0E3EC">
+
+        <Button
+            android:id="@+id/btnKbDelete"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:text="✕"
+            android:textSize="18sp"
+            android:backgroundTint="#D1D5E0"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnKbSwitch"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="4dp"
+            android:text="⌨"
+            android:textSize="18sp"
+            android:backgroundTint="#D1D5E0"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnKbSpace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="␣"
+            android:textSize="18sp"
+            android:backgroundTint="#D1D5E0"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/btnKbSend"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:text="➤"
+            android:textSize="18sp"
+            android:backgroundTint="#D1D5E0"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+</LinearLayout>
